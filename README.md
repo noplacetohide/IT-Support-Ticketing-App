@@ -5,8 +5,13 @@ This project consists of a **client** and a **backend** for managing IT support 
 ---
 
 ## 🎥 Demo Video
+<h2 align="center">🎥 Demo Video</h2>
 
-[![Watch Demo](https://via.placeholder.com/800x450.png?text=Click+to+Watch+Demo)](https://github.com/noplacetohide/IT-Support-Ticketing-App/blob/main/demo/demo.mov)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=XCTPAI9orUc">
+    <img src="https://img.youtube.com/vi/XCTPAI9orUc/0.jpg" width="600">
+  </a>
+</p>
 
 ## 📦 Prerequisites
 
