@@ -4,12 +4,11 @@ This project consists of a **client** and a **backend** for managing IT support 
 
 ---
 
-## 🎥 Demo Video
 <h2 align="center">🎥 Demo Video</h2>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=XCTPAI9orUc">
-    <img src="https://img.youtube.com/vi/XCTPAI9orUc/0.jpg" width="600">
+  <a href="https://www.youtube.com/watch?v=XCTPAI9orUc" target="_blank">
+    <img src="https://img.youtube.com/vi/XCTPAI9orUc/0.jpg" width="700" alt="Demo Video">
   </a>
 </p>
 
