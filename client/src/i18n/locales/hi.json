@@ -1,0 +1,100 @@
+{
+    "common": {
+        "appName": "22 यार्ड्स",
+        "loading": "लोड हो रहा है...",
+        "error": "कुछ गलत हो गया",
+        "retry": "पुनः प्रयास करें",
+        "back": "वापस",
+        "continue": "जारी रखें",
+        "save": "सहेजें",
+        "cancel": "रद्द करें",
+        "required": "*"
+    },
+    "login": {
+        "title": "22 यार्ड्स में आपका स्वागत है",
+        "subtitle": "अपने खाते में साइन इन करें",
+        "emailLabel": "ईमेल पता",
+        "emailPlaceholder": "you@example.com",
+        "passwordLabel": "पासवर्ड",
+        "passwordPlaceholder": "अपना पासवर्ड दर्ज करें",
+        "signIn": "साइन इन",
+        "signingIn": "साइन इन हो रहा है...",
+        "login": "लॉगिन"
+    },
+    "register": {
+        "title": "खाता बनाएं",
+        "subtitle": "आज ही 22 यार्ड्स से जुड़ें",
+        "fullNameLabel": "पूरा नाम",
+        "fullNamePlaceholder": "अपना पूरा नाम दर्ज करें",
+        "emailLabel": "ईमेल पता",
+        "emailPlaceholder": "you@example.com",
+        "passwordLabel": "पासवर्ड",
+        "passwordPlaceholder": "पासवर्ड बनाएं",
+        "signUp": "साइन अप",
+        "signingUp": "खाता बनाया जा रहा है...",
+        "register": "रजिस्टर"
+    },
+    "profile": {
+        "title": "अपनी प्रोफ़ाइल पूरी करें",
+        "subtitle": "शुरू करने के लिए हमें अपने बारे में बताएं",
+        "firstName": "पहला नाम",
+        "firstNamePlaceholder": "पहला",
+        "middleName": "मध्य नाम",
+        "middleNamePlaceholder": "मध्य",
+        "lastName": "अंतिम नाम",
+        "lastNamePlaceholder": "अंतिम",
+        "dob": "जन्म तिथि",
+        "gender": "लिंग",
+        "genderPlaceholder": "लिंग चुनें",
+        "genderMale": "पुरुष",
+        "genderFemale": "महिला",
+        "genderOther": "अन्य",
+        "genderPreferNot": "बताना नहीं चाहते",
+        "email": "ईमेल पता",
+        "emailPlaceholder": "you@example.com",
+        "submit": "सहेजें और जारी रखें",
+        "saving": "प्रोफ़ाइल सहेजी जा रही है...",
+        "saveFailed": "प्रोफ़ाइल सहेजने में विफल। कृपया पुनः प्रयास करें।",
+        "errors": {
+            "firstNameRequired": "पहला नाम आवश्यक है",
+            "firstNameMin": "पहला नाम कम से कम 2 अक्षर का होना चाहिए",
+            "lastNameRequired": "अंतिम नाम आवश्यक है",
+            "lastNameMin": "अंतिम नाम कम से कम 2 अक्षर का होना चाहिए",
+            "dobRequired": "जन्म तिथि आवश्यक है",
+            "dobFuture": "जन्म तिथि भविष्य में नहीं हो सकती",
+            "genderRequired": "कृपया अपना लिंग चुनें",
+            "emailRequired": "ईमेल आवश्यक है",
+            "emailInvalid": "कृपया एक मान्य ईमेल पता दर्ज करें"
+        }
+    },
+    "home": {
+        "welcome": "वापसी पर स्वागत है, {{name}}! 👋",
+        "subtitle": "आपके 22 यार्ड्स खाते में क्या हो रहा है।",
+        "logout": "लॉग आउट",
+        "profileCard": {
+            "title": "आपकी प्रोफ़ाइल",
+            "description": "व्यक्तिगत विवरण",
+            "name": "नाम",
+            "email": "ईमेल",
+            "role": "भूमिका"
+        },
+        "statsCard": {
+            "title": "त्वरित आँकड़े",
+            "description": "आपकी गतिविधि का अवलोकन",
+            "matches": "मैच",
+            "sessions": "सत्र"
+        },
+        "gettingStarted": {
+            "title": "शुरू करें",
+            "description": "अपना अनुभव सेट करें",
+            "profileDone": "प्रोफ़ाइल पूरी हुई",
+            "joinMatch": "अपना पहला मैच खेलें",
+            "exploreAnalytics": "एनालिटिक्स देखें"
+        }
+    },
+    "language": {
+        "en": "English",
+        "hi": "हिन्दी",
+        "label": "भाषा"
+    }
+}

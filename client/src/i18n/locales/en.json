@@ -1,0 +1,100 @@
+{
+    "common": {
+        "appName": "22Yards",
+        "loading": "Loading...",
+        "error": "Something went wrong",
+        "retry": "Retry",
+        "back": "Back",
+        "continue": "Continue",
+        "save": "Save",
+        "cancel": "Cancel",
+        "required": "*"
+    },
+    "login": {
+        "title": "Welcome to Allocation IT Support",
+        "subtitle": "Sign in to your account",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "you@example.com",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Enter your password",
+        "signIn": "Sign In",
+        "signingIn": "Signing in...",
+        "login": "Login"
+    },
+    "register": {
+        "title": "Create Account",
+        "subtitle": "Join 22Yards today",
+        "fullNameLabel": "Full Name",
+        "fullNamePlaceholder": "Enter your full name",
+        "emailLabel": "Email Address",
+        "emailPlaceholder": "you@example.com",
+        "passwordLabel": "Password",
+        "passwordPlaceholder": "Create a password",
+        "signUp": "Sign Up",
+        "signingUp": "Creating account...",
+        "register": "Register"
+    },
+    "profile": {
+        "title": "Complete Your Profile",
+        "subtitle": "Tell us a bit about yourself to get started",
+        "firstName": "First Name",
+        "firstNamePlaceholder": "First",
+        "middleName": "Middle Name",
+        "middleNamePlaceholder": "Middle",
+        "lastName": "Last Name",
+        "lastNamePlaceholder": "Last",
+        "dob": "Date of Birth",
+        "gender": "Gender",
+        "genderPlaceholder": "Select gender",
+        "genderMale": "Male",
+        "genderFemale": "Female",
+        "genderOther": "Other",
+        "genderPreferNot": "Prefer not to say",
+        "email": "Email Address",
+        "emailPlaceholder": "you@example.com",
+        "submit": "Save & Continue",
+        "saving": "Saving Profile...",
+        "saveFailed": "Failed to save profile. Please try again.",
+        "errors": {
+            "firstNameRequired": "First name is required",
+            "firstNameMin": "First name must be at least 2 characters",
+            "lastNameRequired": "Last name is required",
+            "lastNameMin": "Last name must be at least 2 characters",
+            "dobRequired": "Date of birth is required",
+            "dobFuture": "Date of birth cannot be in the future",
+            "genderRequired": "Please select your gender",
+            "emailRequired": "Email is required",
+            "emailInvalid": "Please enter a valid email address"
+        }
+    },
+    "home": {
+        "welcome": "Welcome back, {{name}}! 👋",
+        "subtitle": "Here's what's happening with your 22Yards account.",
+        "logout": "Logout",
+        "profileCard": {
+            "title": "Your Profile",
+            "description": "Personal details",
+            "name": "Name",
+            "email": "Email",
+            "role": "Role"
+        },
+        "statsCard": {
+            "title": "Quick Stats",
+            "description": "Your activity overview",
+            "matches": "Matches",
+            "sessions": "Sessions"
+        },
+        "gettingStarted": {
+            "title": "Getting Started",
+            "description": "Set up your experience",
+            "profileDone": "Profile completed",
+            "joinMatch": "Join your first match",
+            "exploreAnalytics": "Explore analytics"
+        }
+    },
+    "language": {
+        "en": "English",
+        "hi": "हिन्दी",
+        "label": "Language"
+    }
+}
