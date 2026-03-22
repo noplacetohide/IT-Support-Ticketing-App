@@ -4,6 +4,10 @@ This project consists of a **client** and a **backend** for managing IT support 
 
 ---
 
+## 🎥 Demo Video
+
+[![Watch Demo](https://via.placeholder.com/800x450.png?text=Click+to+Watch+Demo)](https://github.com/noplacetohide/IT-Support-Ticketing-App/blob/main/demo/demo.mov)
+
 ## 📦 Prerequisites
 
 - [Node.js](https://nodejs.org/) (Recommended: Use `nvm` to manage Node versions)
