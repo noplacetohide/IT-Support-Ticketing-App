@@ -1,4 +1,4 @@
-# Tax App
+# IT support ticketing app
 
 This project consists of a **client** and a **backend** for managing IT support tickets. Follow the steps below to set up and run the application locally.
 
