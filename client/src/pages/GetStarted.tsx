@@ -46,7 +46,6 @@ export default function GetStarted() {
 
   const handleSubmit = () => {
     if (!isFormValid) return;
-    console.log({isLogin, name, password, email})
     if (isLogin) {
       loginMutation.mutate(
         { email, password },

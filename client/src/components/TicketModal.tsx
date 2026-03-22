@@ -135,7 +135,6 @@ export function TicketModal({ ticket, onClose, onSave, assignees, isLoading }: M
             <select
               value={form.assignee?.id || ""}
               onChange={(e) => {
-                console.log({e: e.target.value})
                 const userId = e.target.value;
                 const user = assignees.find((a) => a.id === userId);
                 set("assignee", user ? { id: user.id, name: user.name, email: "" } : null);

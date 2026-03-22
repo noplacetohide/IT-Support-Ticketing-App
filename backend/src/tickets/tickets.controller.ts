@@ -28,7 +28,6 @@ export class TicketsController {
 
   @Get()
   findAll(@Query() queryDto: TicketQueryDto, @Request() req: any) {
-    console.log("--->>",req.user)
     return this.ticketsService.findAll(queryDto, req.user._id);
   }
 

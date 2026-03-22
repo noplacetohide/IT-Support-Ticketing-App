@@ -1,0 +1,1033 @@
+{
+  "info": {
+    "_postman_id": "3fe7ff31-9654-4d16-bd73-4b626766b299",
+    "name": "Allocation: IT Ticketing Tool",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "31493571"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "login",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"email\":\"rahul@example.com\",\"password\":\"password123\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/auth/login",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "login",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"email\":\"rahul@example.com\",\"password\":\"password123\"}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/auth/login",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "auth",
+                    "login"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "371"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"173-8wu3uVhME/5XorF7xY+ddWpWNKk\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 22 Mar 2026 07:26:58 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Login successful\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmODQwMzEzYWUyZTkwN2U4Zjk0MDQiLCJlbWFpbCI6InJhaHVsQGV4YW1wbGUuY29tIiwiaWF0IjoxNzc0MTY0NDE4LCJleHAiOjE3NzQxNzUyMTh9.tHuYy-W5KzgNb2KDIedWbQ1eKGAeaHIv6IUuGIVBfEw\",\n        \"user\": {\n            \"id\": \"69bf840313ae2e907e8f9404\",\n            \"name\": \"Rahul Kumar\",\n            \"email\": \"rahul@example.com\"\n        }\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Register",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\"email\":\"bob@example.com\",\"password\":\"password123\", \"name\":\"Nikhil\"}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/auth/register",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "auth",
+                "register"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Register",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\"email\":\"manshi@example.com\",\"password\":\"password123\", \"name\":\"Manshi Hidam\"}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/auth/register",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "auth",
+                    "register"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "382"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"17e-XuoG6Q42m/8bt3b4gPpwS6gt4j4\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 22 Mar 2026 07:27:34 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true,\n    \"message\": \"Registration successful\",\n    \"data\": {\n        \"access_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmOTllNjBjYmQ4ZDNiZDk2ZGJkN2IiLCJlbWFpbCI6Im1hbnNoaUBleGFtcGxlLmNvbSIsImlhdCI6MTc3NDE2NDQ1NCwiZXhwIjoxNzc0MTc1MjU0fQ.EGmi9afK6rY-Z4IiwHMx1v-QzzA2Q2BQ_KdrzL9FQKk\",\n        \"user\": {\n            \"id\": \"69bf99e60cbd8d3bd96dbd7b\",\n            \"name\": \"Manshi Hidam\",\n            \"email\": \"manshi@example.com\"\n        }\n    }\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Users",
+      "item": [
+        {
+          "name": "Get all users",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer <token>"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/users",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "api",
+                "v1",
+                "users"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get all users",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/users",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "users"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "321"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"141-js+j7joGxtBzhJZjcQP9NASdiuw\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 22 Mar 2026 07:28:06 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "[\n    {\n        \"id\": \"69bf83ed13ae2e907e8f93fe\",\n        \"name\": \"Nikhil\"\n    },\n    {\n        \"id\": \"69bf83f913ae2e907e8f9401\",\n        \"name\": \"Monalisa\"\n    },\n    {\n        \"id\": \"69bf840313ae2e907e8f9404\",\n        \"name\": \"Rahul Kumar\"\n    },\n    {\n        \"id\": \"69bf841d13ae2e907e8f9407\",\n        \"name\": \"Tej Singh\"\n    },\n    {\n        \"id\": \"69bf842813ae2e907e8f940a\",\n        \"name\": \"Pankaj Roy\"\n    },\n    {\n        \"id\": \"69bf99e60cbd8d3bd96dbd7b\",\n        \"name\": \"Manshi Hidam\"\n    }\n]"
+            }
+          ]
+        },
+        {
+          "name": "User By ID",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": [
+            {
+              "name": "User By ID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/api/v1/users/{{userID}}",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "api",
+                    "v1",
+                    "users",
+                    "{{userID}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "49"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"31-GrEpvBPrZUbtPtl7W7O/Epfcvds\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 22 Mar 2026 07:38:25 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"id\": \"69bf83ed13ae2e907e8f93fe\",\n    \"name\": \"Nikhil\"\n}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tickets",
+      "item": [
+        {
+          "name": "Get All tickets",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmOTllNjBjYmQ4ZDNiZDk2ZGJkN2IiLCJlbWFpbCI6Im1hbnNoaUBleGFtcGxlLmNvbSIsImlhdCI6MTc3NDE2NDQ1NCwiZXhwIjoxNzc0MTc1MjU0fQ.EGmi9afK6rY-Z4IiwHMx1v-QzzA2Q2BQ_KdrzL9FQKk"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tickets",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tickets"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get All tickets",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmOTllNjBjYmQ4ZDNiZDk2ZGJkN2IiLCJlbWFpbCI6Im1hbnNoaUBleGFtcGxlLmNvbSIsImlhdCI6MTc3NDE2NDQ1NCwiZXhwIjoxNzc0MTc1MjU0fQ.EGmi9afK6rY-Z4IiwHMx1v-QzzA2Q2BQ_KdrzL9FQKk"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:3000/api/v1/tickets",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "tickets"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "813"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"32d-EoiM8E7uwpjhoUgrYoA0XUW3bqs\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 22 Mar 2026 07:33:16 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"data\": [\n        {\n            \"_id\": \"69bf857e13ae2e907e8f9477\",\n            \"title\": \"Test 1\",\n            \"description\": \"Test 2\",\n            \"due_date\": \"2026-03-22T00:00:00.000Z\",\n            \"priority\": \"mid\",\n            \"status\": \"todo\",\n            \"assignee\": {\n                \"id\": \"69bf840313ae2e907e8f9404\",\n                \"name\": \"Rahul Kumar\"\n            },\n            \"created_by\": {\n                \"id\": \"69bf840313ae2e907e8f9404\",\n                \"name\": \"Rahul Kumar\"\n            },\n            \"is_deleted\": false,\n            \"createdAt\": \"2026-03-22T06:00:30.671Z\",\n            \"updatedAt\": \"2026-03-22T07:24:53.091Z\"\n        },\n        {\n            \"_id\": \"69bf824313ae2e907e8f93e1\",\n            \"title\": \"qw\",\n            \"description\": \"q\",\n            \"due_date\": \"2026-01-22T00:00:00.000Z\",\n            \"priority\": \"mid\",\n            \"status\": \"todo\",\n            \"assignee\": {\n                \"id\": \"69bf841d13ae2e907e8f9407\",\n                \"name\": \"Tej Singh\"\n            },\n            \"created_by\": {\n                \"id\": \"69bf840313ae2e907e8f9404\",\n                \"name\": \"Rahul Kumar\"\n            },\n            \"is_deleted\": false,\n            \"createdAt\": \"2026-03-22T05:46:43.089Z\",\n            \"updatedAt\": \"2026-03-22T07:24:56.641Z\"\n        }\n    ],\n    \"pagination\": {\n        \"total\": 2,\n        \"page\": 1,\n        \"limit\": 10,\n        \"totalPages\": 1\n    }\n}"
+            }
+          ]
+        },
+        {
+          "name": "Get tickets by ID",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmOTllNjBjYmQ4ZDNiZDk2ZGJkN2IiLCJlbWFpbCI6Im1hbnNoaUBleGFtcGxlLmNvbSIsImlhdCI6MTc3NDE2NDQ1NCwiZXhwIjoxNzc0MTc1MjU0fQ.EGmi9afK6rY-Z4IiwHMx1v-QzzA2Q2BQ_KdrzL9FQKk"
+              }
+            ],
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tickets",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tickets"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Get tickets by ID",
+              "originalRequest": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmOTllNjBjYmQ4ZDNiZDk2ZGJkN2IiLCJlbWFpbCI6Im1hbnNoaUBleGFtcGxlLmNvbSIsImlhdCI6MTc3NDE2NDQ1NCwiZXhwIjoxNzc0MTc1MjU0fQ.EGmi9afK6rY-Z4IiwHMx1v-QzzA2Q2BQ_KdrzL9FQKk"
+                  }
+                ],
+                "url": {
+                  "raw": "http://localhost:3000/api/v1/tickets/{{ticketID}}",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "tickets",
+                    "{{ticketID}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "414"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"19e-55tksdEpcE5RlTKHh3ZsK8BRaAk\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 22 Mar 2026 07:37:58 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"_id\": \"69bf9bcc4cd1de8a3c67d9fe\",\n    \"title\": \"MYSQL Migration\",\n    \"description\": \"Please plan for Migration phase 2!\",\n    \"due_date\": \"2026-03-28T00:00:00.000Z\",\n    \"priority\": \"mid\",\n    \"status\": \"todo\",\n    \"assignee\": {\n        \"id\": \"69bf840313ae2e907e8f9404\",\n        \"name\": \"Rahul Kumar\"\n    },\n    \"created_by\": {\n        \"id\": \"69bf99e60cbd8d3bd96dbd7b\",\n        \"name\": \"Manshi Hidam\"\n    },\n    \"is_deleted\": false,\n    \"createdAt\": \"2026-03-22T07:35:40.905Z\",\n    \"updatedAt\": \"2026-03-22T07:37:28.679Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Create Ticket",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmOTllNjBjYmQ4ZDNiZDk2ZGJkN2IiLCJlbWFpbCI6Im1hbnNoaUBleGFtcGxlLmNvbSIsImlhdCI6MTc3NDE2NDQ1NCwiZXhwIjoxNzc0MTc1MjU0fQ.EGmi9afK6rY-Z4IiwHMx1v-QzzA2Q2BQ_KdrzL9FQKk"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"MySQL Migration\",\n    \"description\": \"Please plan for Migration phase 2\",\n    \"due_date\": \"2026-03-28T00:00:00.000Z\",\n    \"priority\": \"mid\",\n    \"status\": \"todo\",\n    \"assignee\": \"69bf840313ae2e907e8f9404\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tickets",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tickets"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Create Ticket",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmOTllNjBjYmQ4ZDNiZDk2ZGJkN2IiLCJlbWFpbCI6Im1hbnNoaUBleGFtcGxlLmNvbSIsImlhdCI6MTc3NDE2NDQ1NCwiZXhwIjoxNzc0MTc1MjU0fQ.EGmi9afK6rY-Z4IiwHMx1v-QzzA2Q2BQ_KdrzL9FQKk"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"title\": \"MySQL Migration\",\n    \"description\": \"Please plan for Migration phase 2\",\n    \"due_date\": \"2026-03-28T00:00:00.000Z\",\n    \"priority\": \"mid\",\n    \"status\": \"todo\",\n    \"assignee\": \"69bf840313ae2e907e8f9404\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/api/v1/tickets",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "tickets"
+                  ]
+                }
+              },
+              "status": "Created",
+              "code": 201,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "413"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"19d-Nx5tD3ams8+wHLm+d/mq45DgQEo\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 22 Mar 2026 07:35:41 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"_id\": \"69bf9bcc4cd1de8a3c67d9fe\",\n    \"title\": \"MySQL Migration\",\n    \"description\": \"Please plan for Migration phase 2\",\n    \"due_date\": \"2026-03-28T00:00:00.000Z\",\n    \"priority\": \"mid\",\n    \"status\": \"todo\",\n    \"assignee\": {\n        \"id\": \"69bf840313ae2e907e8f9404\",\n        \"name\": \"Rahul Kumar\"\n    },\n    \"created_by\": {\n        \"id\": \"69bf99e60cbd8d3bd96dbd7b\",\n        \"name\": \"Manshi Hidam\"\n    },\n    \"is_deleted\": false,\n    \"createdAt\": \"2026-03-22T07:35:40.905Z\",\n    \"updatedAt\": \"2026-03-22T07:35:40.905Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Update Ticket",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmOTllNjBjYmQ4ZDNiZDk2ZGJkN2IiLCJlbWFpbCI6Im1hbnNoaUBleGFtcGxlLmNvbSIsImlhdCI6MTc3NDE2NDQ1NCwiZXhwIjoxNzc0MTc1MjU0fQ.EGmi9afK6rY-Z4IiwHMx1v-QzzA2Q2BQ_KdrzL9FQKk"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"MYSQL Migration\",\n    \"description\": \"Please plan for Migration phase 2!\",\n    \"due_date\": \"2026-03-28T00:00:00.000Z\",\n    \"priority\": \"mid\",\n    \"status\": \"todo\",\n    \"assignee\": \"69bf840313ae2e907e8f9404\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tickets/{{ticketID}}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tickets",
+                "{{ticketID}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Update Ticket",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmOTllNjBjYmQ4ZDNiZDk2ZGJkN2IiLCJlbWFpbCI6Im1hbnNoaUBleGFtcGxlLmNvbSIsImlhdCI6MTc3NDE2NDQ1NCwiZXhwIjoxNzc0MTc1MjU0fQ.EGmi9afK6rY-Z4IiwHMx1v-QzzA2Q2BQ_KdrzL9FQKk"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"title\": \"MYSQL Migration\",\n    \"description\": \"Please plan for Migration phase 2!\",\n    \"due_date\": \"2026-03-28T00:00:00.000Z\",\n    \"priority\": \"mid\",\n    \"status\": \"todo\",\n    \"assignee\": \"69bf840313ae2e907e8f9404\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/api/v1/tickets/{{ticketID}}",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "tickets",
+                    "{{ticketID}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "414"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"19e-55tksdEpcE5RlTKHh3ZsK8BRaAk\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 22 Mar 2026 07:37:28 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"_id\": \"69bf9bcc4cd1de8a3c67d9fe\",\n    \"title\": \"MYSQL Migration\",\n    \"description\": \"Please plan for Migration phase 2!\",\n    \"due_date\": \"2026-03-28T00:00:00.000Z\",\n    \"priority\": \"mid\",\n    \"status\": \"todo\",\n    \"assignee\": {\n        \"id\": \"69bf840313ae2e907e8f9404\",\n        \"name\": \"Rahul Kumar\"\n    },\n    \"created_by\": {\n        \"id\": \"69bf99e60cbd8d3bd96dbd7b\",\n        \"name\": \"Manshi Hidam\"\n    },\n    \"is_deleted\": false,\n    \"createdAt\": \"2026-03-22T07:35:40.905Z\",\n    \"updatedAt\": \"2026-03-22T07:37:28.679Z\"\n}"
+            }
+          ]
+        },
+        {
+          "name": "Delete Ticket",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{bearerToken}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmOTllNjBjYmQ4ZDNiZDk2ZGJkN2IiLCJlbWFpbCI6Im1hbnNoaUBleGFtcGxlLmNvbSIsImlhdCI6MTc3NDE2NDQ1NCwiZXhwIjoxNzc0MTc1MjU0fQ.EGmi9afK6rY-Z4IiwHMx1v-QzzA2Q2BQ_KdrzL9FQKk"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"title\": \"MYSQL Migration\",\n    \"description\": \"Please plan for Migration phase 2!\",\n    \"due_date\": \"2026-03-28T00:00:00.000Z\",\n    \"priority\": \"mid\",\n    \"status\": \"todo\",\n    \"assignee\": \"69bf840313ae2e907e8f9404\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/v1/tickets/{{ticketID}}",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "v1",
+                "tickets",
+                "{{ticketID}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "Delete Ticket",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2OWJmOTllNjBjYmQ4ZDNiZDk2ZGJkN2IiLCJlbWFpbCI6Im1hbnNoaUBleGFtcGxlLmNvbSIsImlhdCI6MTc3NDE2NDQ1NCwiZXhwIjoxNzc0MTc1MjU0fQ.EGmi9afK6rY-Z4IiwHMx1v-QzzA2Q2BQ_KdrzL9FQKk"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"title\": \"MYSQL Migration\",\n    \"description\": \"Please plan for Migration phase 2!\",\n    \"due_date\": \"2026-03-28T00:00:00.000Z\",\n    \"priority\": \"mid\",\n    \"status\": \"todo\",\n    \"assignee\": \"69bf840313ae2e907e8f9404\"\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost:3000/api/v1/tickets/{{ticketID}}",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "port": "3000",
+                  "path": [
+                    "api",
+                    "v1",
+                    "tickets",
+                    "{{ticketID}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "X-Powered-By",
+                  "value": "Express"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Access-Control-Allow-Credentials",
+                  "value": "true"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json; charset=utf-8"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "16"
+                },
+                {
+                  "key": "ETag",
+                  "value": "W/\"10-oV4hJxRVSENxc/wX8+mA4/Pe4tA\""
+                },
+                {
+                  "key": "Date",
+                  "value": "Sun, 22 Mar 2026 07:41:28 GMT"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Keep-Alive",
+                  "value": "timeout=5"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"success\": true\n}"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "bearerToken",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "ticketID",
+      "value": "",
+      "type": "default"
+    },
+    {
+      "key": "userID",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}

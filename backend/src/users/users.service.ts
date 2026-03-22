@@ -21,7 +21,7 @@ export class UsersService {
     if (!user) {
       throw new NotFoundException('User not found');
     }
-    return user;
+    return this.formatUserResponse(user);
   }
 
   async findAll(): Promise<User[]> {

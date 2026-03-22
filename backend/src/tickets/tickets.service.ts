@@ -37,7 +37,7 @@ export class TicketsService {
   }
 
   async findAll(queryDto: TicketQueryDto, userId?: string): Promise<any> {
-    const { page = 1, limit = 10, status, assignee, priority, due_date, created_at } = queryDto;
+    const { page = 1, limit = 100, status, assignee, priority, due_date, created_at } = queryDto;
 
     const filter: any = { is_deleted: false };
 
@@ -135,7 +135,7 @@ export class TicketsService {
     }
   }
 
-  async delete(id: string): Promise<void> {
+  async delete(id: string): Promise<any> {
     try {
       const result = await this.ticketModel
         .findByIdAndUpdate(
@@ -148,6 +148,7 @@ export class TicketsService {
       if (!result) {
         throw new NotFoundException('Ticket not found');
       }
+      return {success: true}
     } catch (error) {
       if (error.kind === 'ObjectId') {
         throw new NotFoundException('Ticket not found');
@@ -166,9 +167,6 @@ export class TicketsService {
   }
 
   private formatTicketResponse(ticket: any): any {
-    console.log({
-        ticket
-    })
     return {
       _id: ticket._id,
       title: ticket.title,
